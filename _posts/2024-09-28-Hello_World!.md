@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "블로그 개설 Hello World!"
 author: 'jinjehr'
 date: 2024-09-28 20:25:00 +0900
