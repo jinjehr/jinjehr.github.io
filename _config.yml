@@ -16,7 +16,7 @@ timezone:
 
 title: PhiLog # the main title
 
-tagline: Some stories I have created for my future # it will display as the subtitle
+tagline: Some stories I have created for my future <br> since 2024 ~ # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
