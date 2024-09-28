@@ -4,7 +4,9 @@ date: 2024-09-28 20:25:00 +0900
 last_modified_at: 
 categories: [Github Blog, Jekyll]
 tags: [github, jekyll, chirpy, blog]
-author: jaehee-kim24
+author: jinjehr
+img:
+description: 처음
 toc: true 
 ---
 
