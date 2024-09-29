@@ -3,8 +3,9 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: instagram1
+  icon: 'fa-brands fa-square-instagram'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.instagram.com/jinphil_choi/'
 
 - type: email
   icon: "fas fa-envelope"
