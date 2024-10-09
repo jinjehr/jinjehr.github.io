@@ -8,7 +8,7 @@ toc: true
 
 # [**최진필 | jinphil Choi**](https://github.com/jinjehr)     
 
-안녕하세요, 최진필입니다.      
+👋 안녕하세요, 최진필입니다.      
 **데이터베이스, 정보보안** 등등을 공부하고 있는 대학생입니다. 
 
 - 공부하거나 정리할 내용을 종종 블로그에 기록할 예정입니다.
@@ -17,27 +17,27 @@ toc: true
 
 <br>
 
-Welcome to my blog! <br>
-This is jinphil Choi, who are learning **DB, Security etc.**
+👋 Welcome to my blog! <br>
+This is jinphil Choi, who are learning **DB, Security etc.** in university
 
 - I start this blog to record my study history and share what I have learned.
-- I can speak Korean, English, Deutsch(maybe ^^)
+- I can speak Korean, English, Deutsch(maybe🧐)
 - Will be updated this blog continuously. Thx for watching mt blog :)
 <br>
 
 ## **Info & Contact**
 ```
-2002/01/26
-대한민국
-jpchoi8076@gmail.com
-단국대학교 사이버보안학과 재학중
+📆 2002/01/26
+🇰🇷 대한민국
+📨 jpchoi8076@gmail.com
+🏫 단국대학교 사이버보안학과 재학중
 ```
 
 ```
-2002/01/26
-Korea Republic
-jpchoi8076@gmail.com
-Dankook Univ. Cybersecurity, College of Software Convergence
+📆 2002/01/26
+🇰🇷 Korea Republic
+📨 jpchoi8076@gmail.com
+📆 Dankook Univ. Cybersecurity, College of Software Convergence
 ``` 
 
 ## **Study History**
