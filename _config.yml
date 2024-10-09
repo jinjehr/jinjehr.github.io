@@ -117,6 +117,7 @@ comments:
   utterances:
     repo: jinjehr/jinjehr.github.io # <gh-username>/<repo>
     issue_term: title
+    label : "💬comment"
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
