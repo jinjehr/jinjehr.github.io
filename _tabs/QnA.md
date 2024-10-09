@@ -1,6 +1,6 @@
 ---
 title: QnA
-icon: 'fa-duotone fa-solid fa-message-question'
+icon: fa-solid fa-circle-question
 order: 4
 comments: true
 toc: true
