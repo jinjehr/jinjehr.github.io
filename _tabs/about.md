@@ -6,8 +6,8 @@ comments: false
 toc: true
 ---
 
-# [**최진필 | jinphil Choi**](https://github.com/jinjehr)     
-
+## [**최진필 | jinphil Choi**](https://github.com/jinjehr)     
+<br>
 👋 안녕하세요, 최진필입니다.      
 **데이터베이스, 정보보안** 등등을 공부하고 있는 대학생입니다. 
 
@@ -16,7 +16,6 @@ toc: true
 - 이 블로그 또한 계속해서 업데이트할 예정입니다. 지켜봐 주시면 감사하겠습니다. :)
 
 <br>
-
 👋 Welcome to my blog! <br>
 This is jinphil Choi, who are learning **DB, Security etc.** in university
 
@@ -25,7 +24,7 @@ This is jinphil Choi, who are learning **DB, Security etc.** in university
 - Will be updated this blog continuously. Thx for watching mt blog :)
 <br>
 
-## **Info & Contact**
+### **Info & Contact**
 ```
 📆 2002/01/26
 🇰🇷 대한민국
@@ -40,7 +39,7 @@ This is jinphil Choi, who are learning **DB, Security etc.** in university
 📆 Dankook Univ. Cybersecurity, College of Software Convergence
 ``` 
 
-## **Study History**
+### **Study History**
 - [x] Goethe-Zertifikat A1 <sup>language</sup>
 - [x] [The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert](https://www.udemy.com/course/best-mysql-k/?couponCode=KEEPLEARNING) <sup>udemy</sup>
 - [ ] Goethe-Zertifikat A2 <sup>language</sup>
