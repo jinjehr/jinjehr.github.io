@@ -24,7 +24,7 @@ This is jinphil Choi, who are learning **DB, Security etc.** in university
 - Will be updated this blog continuously. Thx for watching mt blog :)
 <br>
 
-### **Info & Contact**
+### <u>Info & Contact</u>
 ```
 📆 2002/01/26
 🇰🇷 대한민국
@@ -39,7 +39,7 @@ This is jinphil Choi, who are learning **DB, Security etc.** in university
 📆 Dankook Univ. Cybersecurity, College of Software Convergence
 ``` 
 
-### **Study History**
+### <u>Study History</u>
 - [x] Goethe-Zertifikat A1 <sup>language</sup>
 - [x] [The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert](https://www.udemy.com/course/best-mysql-k/?couponCode=KEEPLEARNING) <sup>udemy</sup>
 - [ ] Goethe-Zertifikat A2 <sup>language</sup>
