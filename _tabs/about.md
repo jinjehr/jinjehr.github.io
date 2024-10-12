@@ -19,7 +19,7 @@ toc: true
 This is jinphil Choi, who are learning **DB, Security etc.** in university
 
 - I start this blog to record my study history and share what I have learned.
-- I can speak Korean, English, Deutsch(maybe🧐)
+- I can speak Korean, English, Deutsch(maybe?🧐)
 - Will be updated this blog continuously. Thx for watching my blog :)
 
 ### <u>Info & Contact</u>

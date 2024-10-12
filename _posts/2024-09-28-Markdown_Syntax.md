@@ -17,11 +17,9 @@ pin: false
 ---
 
 <div class="box-info">
+<div class="title"> Info </div>
 Markdown 문법에 대해 정리한 글입니다.
 </div>
-
-> Markdown 문법에 대해 정리한 글입니다. {: .prompt-info }
----
 
 ## About Markdown
 
@@ -43,7 +41,10 @@ Markdown 문법에 대해 정리한 글입니다.
 
 ## Syntax
 
-> Markdown 문법은 HTML 태그로 변화되어 우리에게 보여지지만, 모든 HTML 태그를 지원하지 않고 일부만 지원하므로 플랫폼과 태그를 꼭 확인해보세요. 또, 이 글은 깃허브 블로그에서 작성되므로 github CSS를 따른다는 점 주의해주세요. {: .prompt-warning }
+<div class="box-warning">
+<div class="title"> Warning </div>
+Markdown 문법은 HTML 태그로 변화되어 우리에게 보여지지만, 모든 HTML 태그를 지원하지 않고 일부만 지원하므로 플랫폼과 태그를 꼭 확인해보세요. 또, 이 글은 깃허브 블로그에서 작성되므로 github CSS를 따른다는 점 주의해주세요.
+</div>
 
 ### <u>제목 (Header)</u>
 - Markdown에서 **제목**을 표현하는 방법입니다. 
