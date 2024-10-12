@@ -21,9 +21,6 @@ image:
 
 개발쪽에 관심이 있거나 몸을 담고 계신 분들은 `README.md` 파일과 같은 md 파일들을 볼 수 있을 것입니다. 바로 이 파일과 같은 것들이 Markdown을 이용해서 만든 문서입니다. 주변에서 정말 많이 볼 수 있고 사용하기도 편해서 많은 인지도를 가지고 있습니다.
 
-![MyEditor](/assets/post_img/2024-10-12_1.png){: width="600"}
-
-
 ### <u>Markdown의 장점</u>
 - 문법이 간단하고 쉽습니다. [Spring Rest Docs](https://spring.io/projects/spring-restdocs)와 같이 더 확장된 기능을 제공하는 `.adoc`형태의 문법도 있지만 더 어렵고 인지도가 적어 제약이 많습니다.
 - 지원가능 플랫폼이 많습니다.  필자는 `VScode` 편집기를 이용하지만 `Notion` 등과 같은 대부분의 에디터에서 사용가능합니다.
