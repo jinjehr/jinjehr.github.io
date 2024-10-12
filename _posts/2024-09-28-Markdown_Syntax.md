@@ -5,10 +5,7 @@ date: 2024-09-28 20:25:00 +0900
 last_modified_at: 2024-09-28 21:25:00 +0900
 categories: [Github Blog, Jekyll]
 tags: [github, jekyll, chirpy, blog]
-img: /assets/post_img/markdown_logo/
-image:
-  path: markdown_logo.jpg
-  alt: ""
+img: /assets/post_img/markdown_logo.jpg/
 description: Markdown Syntax 
 toc: true 
 math: true
