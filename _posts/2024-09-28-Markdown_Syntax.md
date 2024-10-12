@@ -32,7 +32,7 @@ image:
 - 사진과 같은 파일 업로드시 저장후 경로입력을 해야하는 귀찮음이 있습니다.
 - 정해진 표준이 없어 사용자마다 변환방식이나 생성물의 형태가 다를 수 있습니다. 
 
-&nbsp;
+<br>
 
 ## Syntax
 
@@ -43,7 +43,7 @@ image:
 - Markdown에서 **제목**을 표현하는 방법입니다. 
 - `<h1>`부터 `<h6>`까지 나타낼 수 있습니다.
 
-```markdown
+```Header
 # h1
 ## h2
 ### h3
@@ -51,3 +51,75 @@ image:
 ###### h6
 ```
 
+### <u>글자 스타일 (Style)</u>
+- Markdown에서는 글자 강조, 이탈릭체, 밑줄, 취소선을 다음과 같이 표현할 수 있습니다.
+- Markdown에는 밑줄을 지원하지 않으므로 `HTML 태그`를 사용해야합니다.
+
+```Style
+**강조**
+*이탈릭체*
+***강조와 이탈릭체***
+~~취소선~~
+<u>밑줄</u>
+```
+> 결과 : **강조**, *이탈릭체*, ***강조와 이탈릭체***,  ~~취소선~~, <u>밑줄</u> 
+
+- 만약 글자 색상이랑 크기를 변화하고 싶다면 `HTML 태그`를 사용할수 있습니다.
+
+```HTML
+<span style="font-size: 15px; color: Yellow"></span>
+```
+> 결과 : <span style="font-size: 15px; color: Yellow">색상과 크기를 변경한 텍스트입니다.</span>
+
+### <u>기호 출력 (Print Mark)</u> 
+- Markdown에서 사용중인 기호를 출력하기 위해서는 `\`를 이용하여 출력할 수 있습니다.
+```Print Mark
+\*
+\+
+\-
+```
+> 결과 : \* , \+ , \-
+
+### <u>수평선 (Horizontal Rules)</u> 
+- 구분선은 `***`이나 `---`으로 출력할 수 있습니다.
+```Horizontal Rules
+***
+---
+```
+
+### <u>이모지 출력 (Print Emoji)</u>
+- Windows : `Win` + `.`
+- Mac : `Commend` + `Control` + `Space`
+
+### <u>목록 (Lists)</u>
+- Ordered Lists(순서가 있는 리스트)는 `숫자.`로 시작합니다.
+- Unordered Lists(순서가 없는 리스트)는 `-`, `*`, `+`로 시작합니다.
+```Lists
+1. Ordered Lists
+2. Ordered Lists
+3. Ordered Lists
+
+- Unordered Lists
+* Unordered Lists
++ Unordered Lists
+```
+>  결과 : 
+>1. Ordered Lists
+>2. Ordered Lists
+>3. Ordered Lists
+>
+>- Unordered Lists
+>* Unordered Lists
+>+ Unordered Lists
+
+### <u>줄바꿈 (Change Line)</u>
+- 2가지 방법이 존재합니다. 더 편한 방법을 사용하세요. 저는 `<br>`을 더 많이 사용하고 있습니다.
+
+1. HTML 태그인 `<br>`태그를 사용합니다.
+```Change Line #1
+줄바꿈 <br> 1번 방법입니다.
+```
+2. `Space 2번 + Enter` 사용합니다.
+```Change Line #2
+줄바꿈 space+space 2번 방법입니다.
+```
