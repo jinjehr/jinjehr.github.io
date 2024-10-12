@@ -5,17 +5,14 @@ date: 2024-09-28 20:25:00 +0900
 last_modified_at: 2024-09-28 21:25:00 +0900
 categories: [Github Blog, Jekyll]
 tags: [github, jekyll, chirpy, blog]
-img: /assets/post_img/markdown_logo.jpg/
 description: Markdown Syntax 
 toc: true 
 math: true
 pin: false
+image:
+  path: /assets/post_img/markdown_logo.jpg
+  alt: Markdown
 ---
-
-<div class="box-info">
-<div class="title"> Info </div>
-Markdown 문법에 대해 정리한 글입니다.
-</div>
 
 > Markdown 문법에 대해 정리한 글입니다.
 {: .prompt-info }
@@ -38,3 +35,6 @@ Markdown 문법에 대해 정리한 글입니다.
 &nbsp;
 &nbsp;
 
+## Syntax
+
+> Markdown 문법은 HTML 태그로 변화되어 우리에게 보여지지만, 모든 HTML 태그를 지원하지 않고 일부만 지원하므로 플랫폼과 태그를 꼭 확인해보세요. 또, 이 글은 깃허브 블로그에서 작성되므로 github CSS를 따른다는 점 주의해주세요. {: .prompt-warning }
