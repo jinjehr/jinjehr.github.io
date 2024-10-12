@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Markdown Syntax #1 | 마크다운 문법"
 author: 'jinjehr'
 date: 2024-09-28 20:25:00 +0900
@@ -86,6 +85,7 @@ Markdown 문법은 HTML 태그로 변화되어 우리에게 보여지지만, 모
 
 ### <u>수평선 (Horizontal Rules)</u> 
 - 구분선은 `***`이나 `---`으로 출력할 수 있습니다.
+
 ```Markdown
 ***
 ---
