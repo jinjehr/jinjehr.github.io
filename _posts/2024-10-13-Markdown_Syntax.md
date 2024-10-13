@@ -1,8 +1,8 @@
 ---
 title: "Markdown Syntax | 마크다운 문법"
 author: 'jinjehr'
-date: 2024-09-28 20:25:00 +0900
-last_modified_at: 2024-09-28 21:25:00 +0900
+date: 2024-10-13 23:51:00 +0900
+last_modified_at: 2024-10-13 23:51:00 +0900
 categories: [Markdown, Syntax]
 tags: [Markdown, Syntax]
 description: Markdown Syntax 
@@ -74,17 +74,38 @@ This is an H2
 ~~취소선~~
 ```
 
+> Preview : 
+**강조**, *이탈릭체*, ***강조와 이탈릭체***, ~~취소선~~
+
 - Markdown에는 밑줄을 지원하지 않으므로 `HTML 태그` 를 사용해야합니다.
 
 ```html
 <u>밑줄</u>
 ```
+> Preview : 
+<u>밑줄</u>
 
 - 만약 글자 색상이랑 크기를 변화하고 싶다면 `HTML 태그` 를 사용할수 있습니다.
 
 ```html
-<span style="font-size: 15px; color: brown"></span>
+<span style="font-size: 15px; color: skyblue"></span>
 ```
+
+> Preview : 
+<span style="font-size: 15px; color: skyblue">색상과 크기를 변화한 텍스트입니다.</span>
+
+<br>
+
+### <u>수평선 (Horizontal Rules)</u> 
+- 구분선은 `***` 이나 `---` 으로 출력할 수 있습니다.
+
+```markdown
+***
+---
+```
+
+> Preview : 
+***
 
 <br>
 
@@ -97,22 +118,68 @@ This is an H2
 \-
 ```
 
+> Preview : 
+\*, \+, \-
+
 <br>
 
-
-### <u>수평선 (Horizontal Rules)</u> 
-- 구분선은 `***` 이나 `---` 으로 출력할 수 있습니다.
+### <u>체크 리스트 (Check Lists)</u>
+- 앞에 `[X]` 를 쓰면 완료된 리스트를 표현할 수 있습니다.
+- 앞에 `[ ]` 를 쓰면 미완료된 리스트를 표현할 수 있습니다.
 
 ```markdown
-***
----
+- [X] complete
+- [ ] incomplete
 ```
+
+> Preview : 
+>- [X] complete 
+>- [ ] incomplete
 
 <br>
 
 ### <u>이모지 출력 (Print Emoji)</u>
 - Windows : `Win` + `.`
-- Mac : `Commend` + `Control` + `Space`
+- Mac : `Command` + `Control` + `Space` 로 하거나 `Fn` 단일키
+> Preview : 😁
+
+<br>
+
+### <u>줄바꿈 (Change Line)</u>
+- 2가지 방법이 존재합니다. 더 편한 방법을 사용하세요. 저는 `<br>` 을 더 많이 사용하고 있습니다.
+
+1. HTML 태그인 `<br>` 태그를 사용합니다.
+
+```markdown
+줄바꿈 <br> 1번 방법입니다.
+```
+> Preview : <br> 줄바꿈 <br> 1번 방법입니다.
+
+2. `Space 2번 + Enter` 사용합니다.
+
+```markdown
+줄바꿈 space+space 2번 방법입니다.
+```
+> Preview : <br> 줄바꿈  
+2번 방법입니다.
+
+<br>
+
+### <u>인용문 (Blockquotes)</u>
+- 본문에 인용구를 삽입할 때 `>` 를 이용해 작성합니다.
+- `>` 의 개수는 최대 3개까지 사용해 중첩 인용문을 사용할 수 있습니다.   
+- 인용문 안에는 리스트나 제목 등을 삽입할 수 있습니다.
+```markdown 
+> 첫번째 인용문
+    >> 두번째 인용문
+        >>> 세번째 인용문
+```
+
+> Preview :
+>
+> 첫번째 인용문
+    >> 두번째 인용문
+        >>> 세번째 인용문
 
 <br>
 
@@ -133,23 +200,54 @@ This is an H2
 1. Ordered Lists
     - Unordered Lists
 ```
+> Preview :
+>1. Ordered Lists
+>2. Ordered Lists
+>3. Ordered Lists
+>
+>- Unordered Lists
+>* Unordered Lists
+>+ Unordered Lists
+>
+>1. Ordered Lists
+>    - Unordered Lists
 
 <br>
 
-### <u>줄바꿈 (Change Line)</u>
-- 2가지 방법이 존재합니다. 더 편한 방법을 사용하세요. 저는 `<br>` 을 더 많이 사용하고 있습니다.
-
-1. HTML 태그인 `<br>` 태그를 사용합니다.
+### <u>인라인 코드 블록 (Inline Code)</u>
+- `Backtick` 을 양끝에 추가하면 그 부분만 강조한 텍스트를 만들 수 있습니다.
 
 ```markdown
-줄바꿈 <br> 1번 방법입니다.
+`인라인 코드 블록` 입니다.
 ```
 
-2. `Space 2번 + Enter` 사용합니다.
+> Preview : `인라인 코드 블록` 입니다.
 
-```markdown
-줄바꿈 space+space 2번 방법입니다.
-```
+<br>
+
+### <u>코드 블록 (Code Blocks)</u>
+- `Backtick` 이나 `~`로 3번 이상 입력 후 사용언어를 명시하면 syntax color가 적용됩니다.
+- 코드 블록의 `Backtick` 이나 `~` 의 수는 같아야 합니다.
+- 사용언어를 안적거나 언어가 아닌 단어를 적어도 코드 블록은 생성됩니다.
+
+~~~markdown
+```python
+print('Hello World')
+```  
+
+```bash
+$ npm run git
+``` 
+~~~
+
+> Preview :
+>```python
+>print('Hello World')
+>```  
+>
+>```bash
+>$ npm run git
+>``` 
 
 <br>
 
@@ -165,6 +263,11 @@ Google : <https://www.google.com>
 [인터넷 브라우저] (https://www.google.com)
 ```
 
+> Preview : <br>
+> [Google] (https://www.google.com) <br>
+> Google : <https://www.google.com> <br>
+> [인터넷 브라우저] (https://www.google.com)
+
 - **내부 링크**는 아래와 같이 사용할 수 있습니다.
 - `[]` 로 묶은 후 `()` 안에 헤드 제목을 작성하면 작성한 헤드로 이동합니다.
 
@@ -174,49 +277,13 @@ Google : <https://www.google.com>
 > 띄어쓰기는 `-` 으로 연결하고, `()` 는 없이 모두 소문자로 작성해야 하며, 이모지는 `::` 제거 후 사용해야 합니다.
 {: .prompt-tip }
 
-<br>
-
-### <u>코드 블록 (Code Blocks)</u>
-- <code>\`</code> 나 `~`로 3번 이상 입력 후 사용언어를 명시하면 syntax color가 적용됩니다.
-- 코드 블록의 <code>\`</code> 나 `~` 의 수는 같아야 합니다.
-- 사용언어를 안적거나 언어가 아닌 단어를 적어도 코드 블록은 생성됩니다.
-
-~~~markdown
-```python
-print('Hello World')
-```  
-
-```bash
-$ npm run git
-``` 
-~~~
-
-<br>
-
-### <u>체크 리스트 (Check Lists)</u>
-- 앞에 `[X]` 를 쓰면 완료된 리스트를 표현할 수 있습니다.
-- 앞에 `[ ]` 를 쓰면 미완료된 리스트를 표현할 수 있습니다.
-
-```markdown
-- [X] complete
-- [ ] incomplete
-```
-
-<br>
-
-### <u>주석 (Comments)</u>
-- `<!-- -->` 를 이용해 주석을 표현할 수 있습니다.
-
-```markdown
-<!-- Comment -->
-```
+> Preview : [마크다운에 대하여] (#about-markdown)
 
 <br>
 
 ### <u>테이블 (Tables)</u>
 - 본문에 표를 삽입할 때 사용합니다.
 - 테이블의 헤더와 셀은 3개 이상의 `-` 으로 구분할 수 있습니다.
-- 헤더와 셀을 구분할 때 `:` 으로 셀의 내용을 정렬할 수 있습니다.
 - 양끝의 `|` 은 생략할 수 있습니다.
 
 ```markdown
@@ -228,6 +295,17 @@ C1|C2|C3
 C4|C5|C6
 ```
 
+> Preview : <br>
+>Create Tables
+>
+>H1|H2|H3
+>---|---|---
+>C1|C2|C3 
+>C4|C5|C6
+
+- 헤더와 셀을 구분할 때 `:` 으로 셀의 내용을 정렬할 수 있습니다.
+- `:---` 는 좌측정렬, `:---:` 는 중앙정렬, `---:` 는 우측정렬이다.
+
 ```markdown
 Create Sorted Tables
 
@@ -238,25 +316,20 @@ C1|C2|C3
 C4|C5|C6
 ```
 
-<br>
-
-### <u>인용문 (Blockquotes)</u>
-- 본문에 인용구를 삽입할 때 `>` 를 이용해 작성합니다.
-- `>` 의 개수는 최대 3개까지 사용해 중첩 인용문을 사용할 수 있습니다.   
-- 인용문 안에는 리스트나 제목 등을 삽입할 수 있습니다.
-```markdown 
-> 첫번째 인용문
-    >> 두번째 인용문
-        >>> 세번째 인용문
-```
+> Preview : <br>
+> H1|H2|H3
+> :---|:---:|---:
+> Left|Mid|Right
+> C1|C2|C3
+> C4|C5|C6
 
 <br>
 
-### <u>인라인 코드 블록 (Inline Code)</u>
-- <code>\`</code> 를 양끝에 추가하면 그 부분만 강조한 텍스트를 만들 수 있습니다.
+### <u>주석 (Comments)</u>
+- `<!-- -->` 를 이용해 주석을 표현할 수 있습니다.
 
 ```markdown
-`인라인 코드 블록` 입니다.
+<!-- Comment -->
 ```
 
 <br>
@@ -304,12 +377,11 @@ C4|C5|C6
 숨겨지는 텍스트
 </details>    
 ```
-> 미리보기
-<details><summary>Click Here</summary>
+> Preview : <details><summary>Click Here</summary>
 Hello World!
 </details> 
 
 <br>
 
-## 참고자료
+## Reference
 - [Basic Syntax : The Markdown elements outlined in the original design document.](https://www.markdownguide.org/basic-syntax/) <sup>site</sup>
