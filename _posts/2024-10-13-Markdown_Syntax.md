@@ -2,7 +2,7 @@
 title: "Markdown Syntax | 마크다운 문법"
 author: 'jinjehr'
 date: 2024-10-13 23:51:00 +0900
-last_modified_at: 2024-10-13 23:51:00 +0900
+last_modified_at: 2024-10-14 00:02:00 +0900
 categories: [Markdown, Syntax]
 tags: [Markdown, Syntax]
 description: Markdown Syntax 
@@ -141,6 +141,7 @@ This is an H2
 ### <u>이모지 출력 (Print Emoji)</u>
 - Windows : `Win` + `.`
 - Mac : `Command` + `Control` + `Space` 로 하거나 `Fn` 단일키
+
 > Preview : 😁
 
 <br>
@@ -176,7 +177,7 @@ This is an H2
 ```
 
 > Preview :
->
+
 > 첫번째 인용문
     >> 두번째 인용문
         >>> 세번째 인용문
@@ -264,9 +265,9 @@ Google : <https://www.google.com>
 ```
 
 > Preview : <br>
-> [Google] (https://www.google.com) <br>
+> [Google](https://www.google.com) <br>
 > Google : <https://www.google.com> <br>
-> [인터넷 브라우저] (https://www.google.com)
+> [인터넷 브라우저](https://www.google.com)
 
 - **내부 링크**는 아래와 같이 사용할 수 있습니다.
 - `[]` 로 묶은 후 `()` 안에 헤드 제목을 작성하면 작성한 헤드로 이동합니다.
@@ -277,7 +278,7 @@ Google : <https://www.google.com>
 > 띄어쓰기는 `-` 으로 연결하고, `()` 는 없이 모두 소문자로 작성해야 하며, 이모지는 `::` 제거 후 사용해야 합니다.
 {: .prompt-tip }
 
-> Preview : [마크다운에 대하여] (#about-markdown)
+> Preview : [마크다운에 대하여](#about-markdown)
 
 <br>
 
@@ -317,6 +318,8 @@ C4|C5|C6
 ```
 
 > Preview : <br>
+>Create Sorted Tables
+>
 > H1|H2|H3
 > :---|:---:|---:
 > Left|Mid|Right
@@ -377,9 +380,8 @@ C4|C5|C6
 숨겨지는 텍스트
 </details>    
 ```
-> Preview : <details><summary>Click Here</summary>
-Hello World!
-</details> 
+> Preview : <details><summary>Click Here</summary>Hello World!</details> 
+
 
 <br>
 
