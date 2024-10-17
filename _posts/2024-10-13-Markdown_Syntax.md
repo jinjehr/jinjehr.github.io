@@ -163,8 +163,6 @@ This is an H2
 ### <u>줄바꿈 (Change Line)</u>
 - 2가지 방법이 존재합니다. 더 편한 방법을 사용하세요. 저는 `<br>` 을 더 많이 사용하고 있습니다.
 
-<br>
-
 #### HTML 태그
 -  HTML 태그인 `<br>` 태그를 사용합니다.
 
@@ -242,6 +240,7 @@ This is an H2
 
 #### 혼합 리스트(Mixed Lists)
 - 물론 위의 리스트 두가지를 동시에 사용 가능합니다.
+
 ```markdown
 1. Ordered Lists
     - Unordered Lists
@@ -271,7 +270,7 @@ This is an H2
 - `Backtick` 이나 `~`로 3번 이상 입력 후 사용언어를 명시하면 syntax color가 적용됩니다.
 - 코드 블록의 `Backtick` 이나 `~` 의 수는 같아야 합니다.
 - 사용언어를 안적거나 언어가 아닌 단어를 적어도 코드 블록은 생성됩니다.
-- [Support Language List] (https://docs.readme.com/rdmd/docs/code-blocks)에서 지원 언어 태그를 확인하실 수 있습니다.
+- [Support Language List](https://docs.readme.com/rdmd/docs/code-blocks)에서 지원 언어 태그를 확인하실 수 있습니다.
 
 ~~~markdown
 ```python
