@@ -2,7 +2,7 @@
 title: "Markdown Syntax | 마크다운 문법"
 author: 'jinjehr'
 date: 2024-10-13 23:51:00 +0900
-last_modified_at: 2024-10-14 12:32:00 +0900
+last_modified_at: 2024-10-17 12:51:00 +0900
 categories: [Markdown, Syntax]
 tags: [Markdown, Syntax]
 description: Markdown Syntax 
@@ -71,6 +71,8 @@ This is an H2
 <br>
 
 ### <u>글자 스타일 (Style)</u>
+
+#### 글씨체(Font)
 - Markdown에서는 글자 강조, 이탈릭체, 밑줄, 취소선을 다음과 같이 표현할 수 있습니다.
 
 ```markdown
@@ -83,6 +85,9 @@ This is an H2
 > Preview : 
 **강조**, *이탈릭체*, ***강조와 이탈릭체***, ~~취소선~~
 
+<br>
+
+#### 밑줄(Underline)
 - Markdown에는 밑줄을 지원하지 않으므로 `HTML 태그` 를 사용해야합니다.
 
 ```html
@@ -91,6 +96,9 @@ This is an H2
 > Preview : 
 <u>밑줄</u>
 
+<br>
+
+#### 색상과 크기(Color, Size)
 - 만약 글자 색상이랑 크기를 변화하고 싶다면 `HTML 태그` 를 사용할수 있습니다.
 
 ```html
@@ -155,6 +163,9 @@ This is an H2
 ### <u>줄바꿈 (Change Line)</u>
 - 2가지 방법이 존재합니다. 더 편한 방법을 사용하세요. 저는 `<br>` 을 더 많이 사용하고 있습니다.
 
+<br>
+
+#### HTML 태그
 -  HTML 태그인 `<br>` 태그를 사용합니다.
 
 ```markdown
@@ -162,6 +173,9 @@ This is an H2
 ```
 > Preview : <br> 줄바꿈 <br> 1번 방법입니다.
 
+<br>
+
+#### 공백 줄바꿈
 - `Space 2번 + Enter` 사용합니다.
 
 ```markdown
@@ -192,33 +206,53 @@ This is an H2
 <br>
 
 ### <u>목록 (Lists)</u>
-- Ordered Lists(순서가 있는 리스트)는 `숫자.` 로 시작합니다.
-- Unordered Lists(순서가 없는 리스트)는 `-` , `*` , `+` 로 시작합니다.
-- 물론 두가지를 동시에 사용 가능합니다.
+
+#### 순서가 있는 리스트(ordered Lists)
+- 말 그대로 순서를 볼 수 있는 리스트입니다.
+- `숫자.` 로 시작합니다.
 
 ```markdown
 1. Ordered Lists
 2. Ordered Lists
 3. Ordered Lists
-
-- Unordered Lists
-* Unordered Lists
-+ Unordered Lists
-
-1. Ordered Lists
-    - Unordered Lists
 ```
+
 > Preview :
 >1. Ordered Lists
 >2. Ordered Lists
 >3. Ordered Lists
->
+
+<br>
+
+#### 순서가 없는 리스트(Unordered Lists)
+- 말 그대로 순서가 없는 리스트입니다.
+- `-` , `*` , `+` 로 시작합니다.
+
+```markdown
+- Unordered Lists
+* Unordered Lists
++ Unordered Lists
+```
+> Preview :
 >- Unordered Lists
 >* Unordered Lists
 >+ Unordered Lists
->
+
+<br>
+
+#### 혼합 리스트(Mixed Lists)
+- 물론 위의 리스트 두가지를 동시에 사용 가능합니다.
+```markdown
+1. Ordered Lists
+    - Unordered Lists
+- Ordered Lists
+    1. Unordered Lists
+```
+> Preview :
 >1. Ordered Lists
 >    - Unordered Lists
+>- Ordered Lists
+>    1. Unordered Lists
 
 <br>
 
@@ -237,6 +271,7 @@ This is an H2
 - `Backtick` 이나 `~`로 3번 이상 입력 후 사용언어를 명시하면 syntax color가 적용됩니다.
 - 코드 블록의 `Backtick` 이나 `~` 의 수는 같아야 합니다.
 - 사용언어를 안적거나 언어가 아닌 단어를 적어도 코드 블록은 생성됩니다.
+- [Support Language List] (https://docs.readme.com/rdmd/docs/code-blocks)에서 지원 언어 태그를 확인하실 수 있습니다.
 
 ~~~markdown
 ```python
@@ -260,7 +295,8 @@ $ npm run git
 <br>
 
 ### <u>링크 (Links)</u>
-- **외부 링크**는 아래와 같이 사용할 수 있습니다. 
+
+#### 외부링크(External Link)
 - `<>` 가 없어도 링크로 인식하고 링크 이름도 아래와 같이 변경 가능합니다.
 
 ```markdown
@@ -276,20 +312,25 @@ Google : <https://www.google.com>
 > Google : <https://www.google.com> <br>
 > [인터넷 브라우저](https://www.google.com)
 
-- **내부 링크**는 아래와 같이 사용할 수 있습니다.
+<br>
+
+#### 내부링크(Internal Link)
 - `[]` 로 묶은 후 `()` 안에 헤드 제목을 작성하면 작성한 헤드로 이동합니다.
+- 띄어쓰기는 `-` 로 연결해야 합니다.
+- `()` 는 없이 모두 소문자로 작성해야 합니다.
+- 이모지는 `::` 제거 후 사용해야 합니다.
 
 ```markdown
 [마크다운에 대하여](#about-markdown)
 ```
-> 띄어쓰기는 `-` 으로 연결하고, `()` 는 없이 모두 소문자로 작성해야 하며, 이모지는 `::` 제거 후 사용해야 합니다.
-{: .prompt-tip }
 
 > Preview : [마크다운에 대하여](#about-markdown)
 
 <br>
 
 ### <u>테이블 (Tables)</u>
+
+#### 표(Creating Tables)
 - 본문에 표를 삽입할 때 사용합니다.
 - 테이블의 헤더와 셀은 3개 이상의 `-` 으로 구분할 수 있습니다.
 - 양끝의 `|` 은 생략할 수 있습니다.
@@ -311,6 +352,9 @@ C4|C5|C6
 >C1|C2|C3 
 >C4|C5|C6
 
+<br>
+
+#### 정렬된 표(Sorted Tables)
 - 헤더와 셀을 구분할 때 `:` 으로 셀의 내용을 정렬할 수 있습니다.
 - `:---` 는 좌측정렬, `:---:` 는 중앙정렬, `---:` 는 우측정렬이다.
 
@@ -396,3 +440,4 @@ C4|C5|C6
 
 ## Reference
 - [Basic Syntax : The Markdown elements outlined in the original design document.](https://www.markdownguide.org/basic-syntax/) <sup>site</sup>
+- [Support Language List in Markdown](https://docs.readme.com/rdmd/docs/code-blocks)<sup>site</sup>
