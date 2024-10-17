@@ -250,6 +250,7 @@ This is an H2
 > Preview :
 >1. Ordered Lists
 >    - Unordered Lists
+>    
 >- Ordered Lists
 >    1. Unordered Lists
 
@@ -267,7 +268,7 @@ This is an H2
 <br>
 
 ### <u>코드 블록 (Code Blocks)</u>
-- `Backtick` 이나 `~`로 3번 이상 입력 후 사용언어를 명시하면 syntax color가 적용됩니다.
+- `Backtick` 이나 `~`로 3번 이상 입력 후 사용언어를 명시하면 syntax highlight가 적용됩니다.
 - 코드 블록의 `Backtick` 이나 `~` 의 수는 같아야 합니다.
 - 사용언어를 안적거나 언어가 아닌 단어를 적어도 코드 블록은 생성됩니다.
 - [Support Language List](https://docs.readme.com/rdmd/docs/code-blocks)에서 지원 언어 태그를 확인하실 수 있습니다.
